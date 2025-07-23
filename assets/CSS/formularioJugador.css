@@ -78,47 +78,17 @@ main {
     grid-template-rows: auto;
     height: auto;
     width: auto;
-    gap: 5rem;
+    gap: 2rem;
 }
-
-.login-container {
+.contenedor-principal{
     display: flex;
-    color: white;
-    padding: 2rem;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.contenedor-texto{
-    display: flex;
-    width: 50%;
     flex-direction: column;
-    justify-content: center;
+    gap: 2rem;
+}
+section .contenedor-titulo{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-.contenedor-trofeo{
-    display: flex;
-    width: 50%;
-    justify-content: center;
-}
-
-.login-container h2 {
-    margin-bottom: 1.5rem;
-} 
-
-.login-container img{
-    width: 25rem;
-    max-width: 100%;
-}
-
-main .contenedor-trivia{
-    display: flex;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-main .contenedor-trivia div{
-    height: auto;
-    width: 18rem;
 }
 .centrar-contenido{
     display: flex;
@@ -130,69 +100,94 @@ main .contenedor-trivia div{
     flex-direction: column;
     align-items: center;
 }
-.card{
-    background-color: #0D0D0D;
+
+.contenedor-barra{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    gap: 1rem;
-    border-radius: 30px;
-    color: #fff;
-    transition: box-shadow 0.3s ease;
-
-    img{
-        width: 50%;
-        height: auto;
+    progress{
+        height: 3rem;
+        width: 100%;
     }
 }
-.card:hover{
-    box-shadow: 0px 17px 15px #fcad15;
-    transform: scale(1.05);
-}
-
-.btn-card{
+.contendor-formulario{
     display: flex;
-    width: 70%;
     justify-content: center;
-    padding: 10px;
-    border-radius: 10px;
-    background: #252525;
-    border: 2px solid green;
-    color: white;
-    text-decoration: none;
+    flex-direction: column;
+    gap: 3rem
 }
+.contenedor-pregunta{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-respuestas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.contenedor-respuestas button {
+    height: auto; 
+    width: 19rem; 
+    border-radius: 10px; 
+    background-color: #333; 
+    border: 2px solid blue;
+    color: #fff; 
+    word-wrap: break-word; 
+    white-space: normal; 
+    padding: 0.5rem 1rem; 
+    font-size: 1rem;
+    text-align: center; 
+    overflow: hidden;
+    box-sizing: border-box; 
+    line-height: 1.2; 
+}
+.contenedor-respuestas button:hover{
+    background-color: blue;
+    transition: 0.3s ease;
+    transform: scale(1.04);
+}
+.contenedor-botones-finales{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    button{
+        width: 8rem;
+        height: 3rem;
+        border-radius: 10px;
+        color: white;
+        background: #333;
+    }
 
-.btn-card:hover{
-    background: green;
+}
+.btn-atras{
+    border: 3px solid red;
+}
+.btn-siguiente{
+    border: 3px solid rgb(4, 189, 4);
+}
+.btn-atras:hover{
+    background-color: red;
     transition: 0.3s ease;
     transform: scale(1.1);
 }
-
+.btn-siguiente:hover{
+    background-color: rgb(4, 189, 4);
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
 @media (max-width: 768px) {
     main{
         padding: 2rem;
-        .contenedor-trivia div{
-            width: 100%;
-        }
     }
     nav{
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 1.5rem;
     }
-    .contenedor-texto {
-        width: 100%; 
-        text-align: center; 
-    }
-
-    .contenedor-trofeo {
-        width: 100%;
-        margin-top: 1rem; 
-    }
-
-    .login-container img {
-        width: 100%; 
-        max-width: 20rem; 
+    .contenedor-respuestas button{
+        height: 4rem;
+        width: 23rem;
+        
     }
 }
 
@@ -203,9 +198,6 @@ main .contenedor-trivia div{
     }
     main{
         padding: 2rem;
-        .contenedor-trivia{
-            justify-content: space-around;
-        }
     }
 
 }
@@ -215,5 +207,8 @@ main .contenedor-trivia div{
     .container {
         width: 60%;
         margin: 0 auto;
+    }
+    .contenedor-respuestas button{
+        width: 30rem;
     }
 }
