@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f0e61d379.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/CSS/vistaAdminTrivias.css">
+</head>
+<body>
+    <nav>
+        <div class="contenedor-menu">
+            <div class="container-img">
+                <img src="../../assets/Img/logoPrincipal.PNG" alt="">
+            </div>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="/admin/usuarios">Inicio</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-question"></i>
+                    <a href="/admin/usuarios">Trivias</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="/admin/usuarios">Usuarios</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <main>
+        <section>
+            <h4 class="letra-blanca">Administrador / Agregar Trivia</h4>
+        </section>
+        <section class="row contenedor-formulario d-flex flex-wrap">
+            <div class="col-sm-6">
+                <label for="" class="letra-blanca">Nombre Trivia:</label>
+                <input type="text" class="form-control" placeholder="Ingrese el nombre de la trivia">
+            </div>
+            <div class="col-sm-6">
+                <label for="" class="letra-blanca">Descripción trivia</label>
+                <input type="text" class="form-control" placeholder="Ingrese una breve descripción de la trivia">
+            </div>
+        </section>
+        <section>
+            <h4 class="letra-blanca">Preguntas</h4>
+            <div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <label for="" class="letra-blanca">Pregunta 1</label>
+                        <input type="text" class="form-control" placeholder="Ingrese la pregunta 1">
+                    </div>
+                    <div class="col-sm-4 contenedor-acciones borrar-pregunta">
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="row contenedor-formulario d-flex flex-wrap collapse p-4" id="demo">
+                    <div class="col-sm-6 contenedor-respuestas">
+                        <label for="" class="letra-blanca">Respuesta</label>
+                        <input type="text" class="form-control" placeholder="Ingrese la opcion">
+                    </div>
+                    <div class="col-sm-6 contenedor-acciones">
+                        <label for="" class="letra-blanca">Acciones</label>
+                        <div>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                            <button><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div><button type="button" class="btn btn-success">Agregar opcion</button></div>
+    
+                </div>
+                
+            </div>
+            <section>
+                <button type="button" class="btn btn-primary mt-3">Agregar pregunta</button>
+            </section>
+        </section>
+        
+    </main>    
+</body>
+</html>

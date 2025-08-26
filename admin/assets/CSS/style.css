@@ -15,13 +15,12 @@ body {
     margin: 0;
 }
 
-/* Ocultar la barra de desplazamiento */
 nav::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
+    display: none; 
 }
 nav {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer y Edge */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
 
 .letra-blanca{
